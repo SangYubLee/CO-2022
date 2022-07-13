@@ -1,0 +1,23 @@
+beq x0, x0, 12
+add x16, x1, x2
+bne x0, x1, 12
+sub x17, x1, x2
+jalr x19, x0, 4
+add x18, x3, x4
+jal x20, 4
+add x21, x4, x2
+
+jalr x31, x0, 32 ???????
+
+x17: -1
+x19: add x18, .. 의 주소 들어가있음 20         jalr::  nextPC=x0+4
+x16: 3
+x18: 7
+x20: add x21, .. 의 주소 28
+x21: 6
+x31: PC+4= 36
+
+x19에 add x18, 저거 들어가있음, add X16로 이동
+
+
+/////////// 21에 6이 아니라 0이어야됨
